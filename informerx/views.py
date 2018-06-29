@@ -6,4 +6,4 @@ from django.http import HttpResponse
 from .models import PageView
 # Create your views here.
 def health(request):
-    return HttpResponse(PageView.objects.count())
+    return HttpResponse(1)

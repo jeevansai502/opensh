@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from informerx.views import health
+from django.conf import settings
+from django.conf.urls import include, url
+from django.contrib import admin
+
 
 urlpatterns = [
     url(r'^health$', health),

@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from informerx.views import health
 
 urlpatterns = [
+    url(r'^health$', health),
     path('admin/', admin.site.urls),
 ]
